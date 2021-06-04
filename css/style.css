@@ -1,14 +1,12 @@
-<head>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-</head>
-
 body {
   background-color: #ffffff;
   font-family: 'Alegreya', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 400 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to 400 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
@@ -18,12 +16,12 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 2.75em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h3 {
@@ -39,36 +37,41 @@ h4 {
 img {
   width: 100%;
 }
-
+/* ==================
+LINKS AND BUTTONS
+=================== */
 a {
   color: #0059b3;
-  text-decoration: none; /* No underlining */
 }
+
+a:visited {
+  /* visited link */
+  color: #0059b3;
+}
+
 a:hover,
 a:focus {
   color: #0073e6;
-  text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-a:visited { /* visited link */
-  color: #0059b3;
-}
-a:active { /* selected link */
-  color: #1a8cff;
+a:active {
+  /* selected link */
+  color: #0073e6;
 }
 
 .button {
   display: inline-block;
   background-color: #0059b3;
-  color: #ffffff;
-  font-weight: 400;
-  padding: 10px;
+  color: #ffffff !important;
+  padding: 10px 30px;
   border-radius: 3px;
-  border-bottom: 2px solid #0059b3; /* width of the border, type, colour */
+  border-bottom: 2px solid #0059b3;
+  /* width of the border, type, colour */
   transition: 0.2s opacity;
+  text-decoration: none;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
 }
