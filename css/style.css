@@ -26,12 +26,10 @@ h2 {
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
 }
 
 h4 {
   font-size: 1.35em;
-  font-weight: 400;
 }
 
 img {
@@ -67,11 +65,18 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #0059b3;
   /* width of the border, type, colour */
-  transition: 0.2s opacity;
+  transition: 0.2s background-color;
   text-decoration: none;
 }
 
 .button:hover {
-  opacity: 0.8;
+  background-color: #0059b3CC;
   /* Reduces the opacity of the button to 80% */
+}
+
+.button.button2 {
+  background-color: #0073e6;
+}
+.button.button2:hover {
+  background-color: #0073e6CC;
 }
