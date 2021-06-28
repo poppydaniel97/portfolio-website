@@ -93,7 +93,7 @@ header {
 }
 
 /* ==================
-LAYOUT STYLING
+LAYOUT STYLING: ROWS AND COLUMNS
 =================== */
 
 .container {
@@ -102,4 +102,12 @@ LAYOUT STYLING
 
 #work .row {
   padding-bottom: 25px; border-bottom: 3px solid #6A93BC;
+}
+
+/* ==================
+LAYOUT STYLING: TEXT ALIGNMENT
+=================== */
+
+.center {
+  text-align: center;
 }
