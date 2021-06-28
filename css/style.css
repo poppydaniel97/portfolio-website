@@ -90,7 +90,7 @@ LAYOUT STYLING: HEADER
 =================== */
 
 header {
-  background-color: #ffffff;
+  background-color: #F9F9F9;
   padding: 10px;
   margin: 10px;
   border-bottom: 3px solid #6A93BC;
@@ -125,7 +125,7 @@ NAVIGATION BAR
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #F9F9F9;
   text-align: center;
   padding: 10px 0;
 }
@@ -157,3 +157,14 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   color: #0073e6
 }
+
+/* ==================
+HERO PAGE
+=================== */
+
+#hero {
+  background-color #F9F9F9;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  }
