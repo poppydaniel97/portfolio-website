@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Alegreya', sans-serif;
@@ -79,4 +83,19 @@ a:active {
 }
 .button.button2:hover {
   background-color: #0073e6CC;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #6A93BC;
+}
+
+/* ==================
+LAYOUT STYLING
+=================== */
+
+.container {
+  padding: 0 15px;
 }
