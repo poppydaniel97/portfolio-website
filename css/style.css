@@ -119,6 +119,17 @@ LAYOUT STYLING: TEXT ALIGNMENT
 /* ==================
 NAVIGATION BAR
 =================== */
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
