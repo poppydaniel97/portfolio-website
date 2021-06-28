@@ -85,6 +85,10 @@ a:active {
   background-color: #0073e6CC;
 }
 
+/* ==================
+LAYOUT STYLING: HEADER
+=================== */
+
 header {
   background-color: #ffffff;
   padding: 10px;
@@ -110,4 +114,23 @@ LAYOUT STYLING: TEXT ALIGNMENT
 
 #hero h1 {
   text-align: center;
+}
+
+/* ==================
+NAVIGATION BAR
+=================== */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #4a4a4a
 }
