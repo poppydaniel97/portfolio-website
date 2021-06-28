@@ -99,3 +99,7 @@ LAYOUT STYLING
 .container {
   padding: 0 15px;
 }
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #6A93BC;
+}
