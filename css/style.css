@@ -143,5 +143,17 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #4a4a4a
+  color: #0059b3
+}
+
+nav > ul > li > a:visited {
+  color: #0059b3
+}
+
+nav > ul > li > a:hover {
+  color: #0073e6
+}
+
+nav > ul > li > a:active {
+  color: #0073e6
 }
