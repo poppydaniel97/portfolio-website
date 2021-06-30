@@ -19,12 +19,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2em;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.8em;
   font-weight: 500;
 }
 
@@ -79,7 +79,8 @@ a:active {
 }
 
 .button.button2 {
-  background-color: #0073e6;
+  background-color: #ffffff;
+  color: #0059b3 !important;
 }
 .button.button2:hover {
   background-color: #0073e6CC;
@@ -91,9 +92,11 @@ LAYOUT STYLING: HEADER
 
 header {
   background-color: #F9F9F9;
-  padding: 10px;
-  margin: 10px;
+  padding: 10px 0;
   border-bottom: 3px solid #6A93BC;
+    text-align: center;
+    position: fixed;
+    width: 100%;
 }
 
 /* ==================
@@ -104,16 +107,56 @@ LAYOUT STYLING: ROWS AND COLUMNS
   padding: 0 15px;
 }
 
-#work .row {
-  padding-bottom: 25px; border-bottom: 3px solid #6A93BC;
+main {
+  padding-top: 92px;
 }
 
+section {
+  margin: 2em 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 3px solid #6A93BC;
+}
+
+#work .row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 /* ==================
 LAYOUT STYLING: TEXT ALIGNMENT
 =================== */
 
-#hero h1 {
+#welcome h1, #project h1 {
   text-align: center;
+}
+
+#welcome h1 span, #project h1 span {
+  display: block;
+  font-size: 60%;
+  margin-top: 1em;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+.social .fab {
+  font-size: 1.7em;
+  margin: 0 0.7em;
+  color: #ffffff;
+}
+
+.social {
+  margin-top: 1em;
+}
+
+footer {
+  background-color: #0059b3;
+  padding: 1em 0;
+  text-align: center;
+  color: #ffffff;
 }
 
 /* ==================
@@ -121,18 +164,16 @@ NAVIGATION BAR
 =================== */
 
 .logo {
-  max-width: 250px;
+font-size: 1.5em;
+text-decoration: none;
+color: #6A93BC;
 }
 
-header {
-  background-color: #F9F9F9;
-  text-align: center;
-  padding: 10px 0;
-}
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 nav > ul > li {
@@ -143,7 +184,8 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #0059b3
+  color: #0059b3;
+  text-decoration: none;
 }
 
 nav > ul > li > a:visited {
