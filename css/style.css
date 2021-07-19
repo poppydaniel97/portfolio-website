@@ -19,7 +19,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: 500;
 }
 
@@ -69,7 +69,8 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #0059b3;
   /* width of the border, type, colour */
-  transition: 0.2s background-color;
+  transition-duration: 0.2s;
+  transition-property: opacity;
   text-decoration: none;
 }
 
@@ -94,7 +95,7 @@ header {
   background-color: #F9F9F9;
   padding: 10px 0;
   border-bottom: 3px solid #6A93BC;
-    text-align: center;
+    text-align: unset;
     position: fixed;
     width: 100%;
 }
@@ -123,6 +124,12 @@ section {
 #work .row:last-child {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /* ==================
 LAYOUT STYLING: TEXT ALIGNMENT
@@ -209,4 +216,100 @@ HERO PAGE
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
   }
+
+
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+header {
+text-align: unset;
+padding: 20px 0 13px;
+}
+
+header .container {
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav {
+  width: auto;
+}
+
+nav ul {
+  margin-top: 0;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+
+@media only screen and (min-width: 1024px) {
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+
+@media only screen and (min-width: 1440px) {
+}
+
+/* ==============================
+CSS Animation
+================================= */
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
