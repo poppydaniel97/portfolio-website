@@ -94,11 +94,10 @@ LAYOUT STYLING: HEADER
 
 header {
   background-color: #F9F9F9;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   border-bottom: 3px solid #6A93BC;
     position: fixed;
     width: 100%;
-    text-align: center;
 }
 
 /* ==================
@@ -110,7 +109,7 @@ LAYOUT STYLING: ROWS AND COLUMNS
 }
 
 main {
-  padding-top: 92px;
+  padding-top: 56px;
 }
 
 section {
@@ -177,6 +176,7 @@ NAVIGATION BAR
 font-size: 1.5em;
 text-decoration: none;
 color: #6A93BC;
+max-width: 150px;
 }
 
 
@@ -186,16 +186,44 @@ nav > ul {
   margin-bottom: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
   color: #0059b3;
   text-decoration: none;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 nav > ul > li > a:visited {
@@ -227,7 +255,19 @@ HERO PAGE
 Medium devices (640px and larger)
 ================================= */
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
 body {
   font-size: 18px;
@@ -279,6 +319,10 @@ Large devices (1024px or larger)
 ================================= */
 
 @media only screen and (min-width: 1024px) {
+}
+
+.logo {
+  min-width: 641px;
 }
 
 .col-lg-7 {}
