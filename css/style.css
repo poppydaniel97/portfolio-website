@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  line-height: 1.4;
+  line-height: 1.4; 
 }
 
 h1 {
@@ -40,6 +40,7 @@ h4 {
 img {
   width: 100%;
 }
+
 /* ==================
 LINKS AND BUTTONS
 =================== */
@@ -66,8 +67,8 @@ a:active {
   display: inline-block;
   background-color: #0059b3;
   color: #ffffff !important;
-  padding: 10px 30px;
-  border-radius: 3px;
+  padding: 6px 30px;
+  border-radius: 100px;
   border-bottom: 2px solid #0059b3;
   /* width of the border, type, colour */
   transition-duration: 0.2s;
@@ -84,6 +85,7 @@ a:active {
   background-color: #ffffff;
   color: #0059b3 !important;
 }
+
 .button.button2:hover {
   background-color: #0073e6CC;
 }
@@ -91,19 +93,17 @@ a:active {
 /* ==================
 LAYOUT STYLING: HEADER
 =================== */
-
 header {
   background-color: #F9F9F9;
   padding: 10px 0 4px;
   border-bottom: 3px solid #6A93BC;
-    position: fixed;
-    width: 100%;
+  position: fixed;
+  width: 100%;
 }
 
 /* ==================
 LAYOUT STYLING: ROWS AND COLUMNS
 =================== */
-
 .container {
   padding: 0 15px;
 }
@@ -133,10 +133,10 @@ section {
   clear: both;
   display: table;
 }
+
 /* ==================
 LAYOUT STYLING: TEXT ALIGNMENT
 =================== */
-
 #welcome h1, #project h1 {
   text-align: center;
 }
@@ -171,22 +171,20 @@ footer {
 /* ==================
 NAVIGATION BAR
 =================== */
-
 .logo {
-font-size: 1.5em;
-text-decoration: none;
-color: #6A93BC;
-max-width: 150px;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #6A93BC;
+  max-width: 150px;
 }
 
-
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin-bottom: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
@@ -209,124 +207,114 @@ nav > ul > li > a {
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: #0059b3
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   color: #0073e6
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   color: #0073e6
 }
 
 /* ==================
 HERO PAGE
 =================== */
-
 #hero {
   background-color #F9F9F9;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
   text-align: center;
-  }
+}
 
-
-  /* ==============================
+/* ==============================
 Medium devices (640px and larger)
 ================================= */
-
 @media only screen and (min-width: 641px) {
-
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-body {
-  font-size: 18px;
-}
+  body {
+    font-size: 18px;
+  }
 
-header {
-text-align: unset;
-padding: 20px 0 13px;
-}
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
-header .container {
-  display: flex;
-justify-content: space-between;
-align-items: center;
-}
+  header .container .navtoggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-nav {
-  width: auto;
-}
+  nav {
+    width: auto;
+  }
 
-nav ul {
-  margin-top: 0;
-}
+  nav ul {
+    margin-top: 0;
+  }
 
-main {
-  padding-top: 69px;
-}
+  main {
+    padding-top: 69px;
+  }
 
-.col-md-6 {
-  width: 50%;
-}
+  .col-md-6 {
+    width: 50%;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding: 0 20px;
-}
+  [class*="col-"] {
+    float: left;
+    padding: 0 20px;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
-
-}
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-
-@media only screen and (min-width: 1024px) {
-}
-
-.logo {
-  min-width: 641px;
-}
+@media only screen and (min-width: 1024px) {}
 
 .col-lg-7 {}
-  .col-lg-5 {}
+
+.col-lg-5 {}
 
 header .container {
   max-width: 1200px;
@@ -336,7 +324,6 @@ header .container {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 
 .no-padding {
   padding: 0;
@@ -349,44 +336,4 @@ header .container {
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-
-@media only screen and (min-width: 1440px) {
-}
-
-/* ==============================
-CSS Animation
-================================= */
-
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
+@media only screen and (min-width: 1440px) {}
